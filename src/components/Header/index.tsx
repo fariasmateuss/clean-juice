@@ -22,13 +22,13 @@ const Header: React.FC = () => {
       </div>
 
       <div className="search">
-        <FontAwesomeIcon icon={faSearch} />
+        <FontAwesomeIcon icon={faSearch} size="sm" />
       </div>
 
       <div className="account">My account</div>
 
       <div className="cart">
-        <FontAwesomeIcon icon={faShoppingCart} />
+        <FontAwesomeIcon icon={faShoppingCart} size="sm" />
       </div>
     </div>
   );
