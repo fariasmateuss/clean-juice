@@ -7,7 +7,7 @@ import './style.css';
 
 const Header: React.FC = () => {
   return (
-    <div className="nav">
+    <nav className="nav">
       <div className="logo">Clean Juice</div>
 
       <div className="menu-links">
@@ -30,7 +30,7 @@ const Header: React.FC = () => {
       <div className="cart">
         <FontAwesomeIcon icon={faShoppingCart} size="sm" />
       </div>
-    </div>
+    </nav>
   );
 };
 
