@@ -8,7 +8,9 @@ import './style.css';
 const Header: React.FC = () => {
   return (
     <nav className="nav">
-      <div className="logo">Clean Juice</div>
+      <div className="logo">
+        Clean J<span>u</span>ice
+      </div>
 
       <div className="menu-links">
         <ul>

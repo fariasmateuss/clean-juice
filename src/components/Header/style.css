@@ -11,6 +11,10 @@
   font-size: 40px;
 }
 
+.logo span {
+  color: #a6c335;
+}
+
 .menu-links ul li {
   display: inline-block;
   padding-right: 20px;
