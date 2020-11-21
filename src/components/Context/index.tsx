@@ -16,7 +16,7 @@ const Context: React.FC = () => {
   }
 
   return (
-    <>
+    <main>
       <div className="content">
         <div className="tagline">Select the desired quantity</div>
 
@@ -58,7 +58,7 @@ const Context: React.FC = () => {
           <FontAwesomeIcon icon={faChevronRight} size="sm" />
         </button>
       </div>
-    </>
+    </main>
   );
 };
 
