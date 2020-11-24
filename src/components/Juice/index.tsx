@@ -9,7 +9,7 @@ import leafThree from '../../assets/img/leaf03.png';
 import leafFour from '../../assets/img/leaf04.png';
 import leafFive from '../../assets/img/leaf05.png';
 
-import './styles.css';
+import { Container } from './styles';
 
 const Juice: React.FC = () => {
   const [parallaxScene, setParallaxScene] = useState<Parallax>();
@@ -27,7 +27,7 @@ const Juice: React.FC = () => {
   }, []);
 
   return (
-    <>
+    <Container>
       <div className="juice">
         <img src={juice} alt="Juice" />
       </div>
@@ -51,7 +51,7 @@ const Juice: React.FC = () => {
           </li>
         </ul>
       </div>
-    </>
+    </Container>
   );
 };
 
