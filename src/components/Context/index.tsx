@@ -6,7 +6,7 @@ import {
   faChevronRight,
 } from '@fortawesome/free-solid-svg-icons';
 
-import './styles.css';
+import { Container } from './styles';
 
 const Context: React.FC = () => {
   const [count, setCount] = useState(0);
@@ -16,7 +16,7 @@ const Context: React.FC = () => {
   }
 
   return (
-    <main>
+    <Container>
       <div className="content">
         <div className="tagline">Select the desired quantity</div>
 
@@ -58,7 +58,7 @@ const Context: React.FC = () => {
           <FontAwesomeIcon icon={faChevronRight} size="sm" />
         </button>
       </div>
-    </main>
+    </Container>
   );
 };
 
