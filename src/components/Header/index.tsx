@@ -3,11 +3,11 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
-import './styles.css';
+import { Nav } from './styles';
 
 const Header: React.FC = () => {
   return (
-    <nav className="nav">
+    <Nav>
       <div className="logo">
         Clean J<span>u</span>ice
       </div>
@@ -32,7 +32,7 @@ const Header: React.FC = () => {
       <div className="cart">
         <FontAwesomeIcon icon={faShoppingCart} size="sm" />
       </div>
-    </nav>
+    </Nav>
   );
 };
 
