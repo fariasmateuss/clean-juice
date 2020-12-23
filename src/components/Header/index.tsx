@@ -3,36 +3,34 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
-import './styles.css';
+import { Nav, Logo, MenuLink, Search, Cart } from './styles';
 
 const Header: React.FC = () => {
   return (
-    <nav className="nav">
-      <div className="logo">
+    <Nav>
+      <Logo>
         Clean J<span>u</span>ice
+      </Logo>
+
+      <div>
+        <MenuLink>Locations</MenuLink>
+        <MenuLink>Our menu</MenuLink>
+        <MenuLink>Our story</MenuLink>
+        <MenuLink>Meet our teem</MenuLink>
+        <MenuLink>Own a clean juice</MenuLink>
+        <MenuLink>Contact us</MenuLink>
       </div>
 
-      <div className="menu-links">
-        <ul>
-          <li>Locations</li>
-          <li>Our menu</li>
-          <li>Our story</li>
-          <li>Meet our teem</li>
-          <li>Own a clean juice</li>
-          <li>Contact us</li>
-        </ul>
-      </div>
-
-      <div className="search">
+      <Search>
         <FontAwesomeIcon icon={faSearch} size="sm" />
-      </div>
+      </Search>
 
-      <div className="account">My account</div>
+      <span className="account">My account</span>
 
-      <div className="cart">
+      <Cart>
         <FontAwesomeIcon icon={faShoppingCart} size="sm" />
-      </div>
-    </nav>
+      </Cart>
+    </Nav>
   );
 };
 
