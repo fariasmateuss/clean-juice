@@ -5,11 +5,13 @@ export default createGlobalStyle`
     margin: 0;
     padding: 0;
   }
+
   a {
-    color: ${({ theme }) => theme.colors.text};
+    color: ${({ theme }) => theme.colors.inline};
     text-decoration: none;
     cursor: pointer;
   }
+
   body {
     width: 100%;
     height: 100vh;
@@ -20,10 +22,12 @@ export default createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
   code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
   }
+
   ul {
     list-style: none;
   }

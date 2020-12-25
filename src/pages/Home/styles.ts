@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { lighten } from 'polished';
 
 interface ArrowsProps {
   arrowPosition: string;
@@ -25,9 +26,10 @@ export const Amount = styled.p`
   flex: 0;
   letter-spacing: 5px;
   color: ${({ theme }) => theme.colors.gray};
+
   span {
     font-size: 60px;
-    color: ${({ theme }) => theme.colors.text};
+    color: ${({ theme }) => theme.colors.inline};
     font-weight: 600;
   }
 `;
@@ -41,11 +43,12 @@ export const Title = styled.h1`
 
 export const More = styled.div`
   flex: 1;
+
   a {
     text-decoration: none;
     font-size: 20px;
     color: ${({ theme }) => theme.colors.primary};
-    background: ${({ theme }) => theme.colors.text};
+    background: ${({ theme }) => theme.colors.inline};
     padding: 10px 30px;
     border-radius: 10px;
   }
@@ -53,13 +56,16 @@ export const More = styled.div`
 
 export const Desc = styled.div`
   flex: 0 0 32%;
+
   p:nth-child(1) {
     font-size: 30px;
     margin-bottom: 20px;
+
     span {
       color: ${({ theme }) => theme.colors.span};
     }
   }
+
   p:nth-child(2) {
     line-height: 2;
   }
@@ -67,16 +73,16 @@ export const Desc = styled.div`
 
 export const Arrow = styled.button<ArrowsProps>`
   position: absolute;
+  padding: 0;
   top: 50%;
+  border: none;
+  background: none;
+  outline: inherit;
   ${props => props.arrowPosition}: 100px;
-  border: 1px solid ${({ theme }) => theme.colors.gray};
-  background: transparent;
-  padding: 20px;
-  outline: none;
   cursor: pointer;
+
   &:hover {
-    color: ${({ theme }) => theme.colors.primary};
-    background: ${({ theme }) => theme.colors.text};
+    color: ${({ theme }) => lighten(0.4, theme.colors.inline)};
   }
 `;
 
@@ -84,10 +90,12 @@ export const Juice = styled.div`
   position: absolute;
   top: 50%;
   left: 50%;
+
   img {
     animation: float 4s ease-in-out infinite;
     max-height: 450px;
   }
+
   @keyframes float {
     0% {
       transform: translate(-50%, -46%);
@@ -108,26 +116,32 @@ export const Leaves = styled.div`
   top: 50%;
   left: 50%;
   z-index: -1;
+
   img {
     max-width: 100%;
     max-height: 100%;
   }
+
   .layer:nth-child(1) {
     top: -100px !important;
     left: -480px !important;
   }
+
   .layer:nth-child(2) {
     top: 10px !important;
     left: 160px !important;
   }
+
   .layer:nth-child(3) {
     top: -300px !important;
     left: 160px !important;
   }
+
   .layer:nth-child(4) {
     top: -10px !important;
     left: 320px !important;
   }
+
   .layer:nth-child(5) {
     top: 200px !important;
     left: -320px !important;

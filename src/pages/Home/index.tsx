@@ -91,7 +91,7 @@ const Home: React.FC = () => {
         arrowPosition="left"
         onClick={() => setCount(count - 1)}
       >
-        <FontAwesomeIcon icon={faChevronLeft} size="sm" />
+        <FontAwesomeIcon icon={faChevronLeft} size="lg" />
       </Arrow>
       <Arrow
         type="button"
@@ -99,7 +99,7 @@ const Home: React.FC = () => {
         arrowPosition="right"
         onClick={() => setCount(count + 1)}
       >
-        <FontAwesomeIcon icon={faChevronRight} size="sm" />
+        <FontAwesomeIcon icon={faChevronRight} size="lg" />
       </Arrow>
 
       <Juice>

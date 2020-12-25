@@ -13,6 +13,7 @@ const Header: React.FC = () => {
       </Logo>
 
       <div>
+        <MenuLink>Home</MenuLink>
         <MenuLink>Locations</MenuLink>
         <MenuLink>Our menu</MenuLink>
         <MenuLink>Our story</MenuLink>
