@@ -15,6 +15,7 @@
     "@types/react-dom": "^16.9.8",
     "parallax-js": "^3.1.0",
     "parent-module": "^2.0.0",
+    "polished": "^4.0.5",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
