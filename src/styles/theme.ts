@@ -1,4 +1,4 @@
-export const defaultTheme = {
+const theme = {
   colors: {
     primary: '#FFFFFF',
     gray: '#999999',
@@ -6,3 +6,5 @@ export const defaultTheme = {
     span: '#AECD31',
   },
 };
+
+export default theme;
