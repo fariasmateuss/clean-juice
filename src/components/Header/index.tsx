@@ -5,7 +5,9 @@ import { faSearch, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 import { Nav, Logo, MenuLink, Search, Cart } from './styles';
 
-const Header: React.FC = () => {
+import { HeaderProps } from './types';
+
+function Header({ account }: HeaderProps) {
   return (
     <Nav>
       <Logo>
@@ -26,13 +28,13 @@ const Header: React.FC = () => {
         <FontAwesomeIcon icon={faSearch} size="sm" />
       </Search>
 
-      <span className="account">My account</span>
+      <span className="account">{account}</span>
 
       <Cart>
         <FontAwesomeIcon icon={faShoppingCart} size="sm" />
       </Cart>
     </Nav>
   );
-};
+}
 
 export default Header;
