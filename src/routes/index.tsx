@@ -3,7 +3,7 @@ import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 
 import Home from '../pages/Home';
 
-const Routes: React.FC = () => {
+function Routes() {
   return (
     <BrowserRouter>
       <Switch>
@@ -12,6 +12,6 @@ const Routes: React.FC = () => {
       </Switch>
     </BrowserRouter>
   );
-};
+}
 
 export default Routes;
