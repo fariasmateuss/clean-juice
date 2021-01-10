@@ -12,15 +12,15 @@ const Header: React.FC = () => {
         Clean J<span>u</span>ice
       </Logo>
 
-      <div>
-        <MenuLink>Home</MenuLink>
-        <MenuLink>Locations</MenuLink>
-        <MenuLink>Our menu</MenuLink>
-        <MenuLink>Our story</MenuLink>
-        <MenuLink>Meet our teem</MenuLink>
-        <MenuLink>Own a clean juice</MenuLink>
-        <MenuLink>Contact us</MenuLink>
-      </div>
+      <MenuLink>
+        <span>Home</span>
+        <span>Locations</span>
+        <span>Our menu</span>
+        <span>Our story</span>
+        <span>Meet our teem</span>
+        <span>Own a clean juice</span>
+        <span>Contact us</span>
+      </MenuLink>
 
       <Search>
         <FontAwesomeIcon icon={faSearch} size="sm" />

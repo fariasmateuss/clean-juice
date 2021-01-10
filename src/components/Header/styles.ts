@@ -21,16 +21,18 @@ export const Logo = styled.h1`
 `;
 
 export const MenuLink = styled.span`
-  display: inline-block;
-  padding-right: 20px;
-  cursor: pointer;
+  & > span {
+    display: inline-block;
+    padding-right: 20px;
+    cursor: pointer;
 
-  &:hover {
-    color: ${({ theme }) => lighten(0.3, theme.colors.inline)};
-  }
+    &:hover {
+      color: ${({ theme }) => lighten(0.3, theme.colors.inline)};
+    }
 
-  &:first-child {
-    color: ${({ theme }) => theme.colors.span};
+    &:first-child {
+      color: ${({ theme }) => theme.colors.span};
+    }
   }
 `;
 
