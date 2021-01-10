@@ -1,4 +1,4 @@
-<img src=".github/thumbnail.png" />
+<img src="docs/resources/thumbnail.png" />
 
 <p align="center">
   Landing page with Parallax.js using React.js.

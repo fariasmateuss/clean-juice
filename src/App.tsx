@@ -4,11 +4,11 @@ import { ThemeProvider } from 'styled-components';
 
 import Routes from './routes';
 import GlobalStyle from './styles/global';
-import { defaultTheme } from './styles/theme';
+import theme from './styles/theme';
 
 const App: React.FC = () => {
   return (
-    <ThemeProvider theme={defaultTheme}>
+    <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Routes />
     </ThemeProvider>

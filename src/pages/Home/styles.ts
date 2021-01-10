@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 import { lighten } from 'polished';
 
-interface ArrowsProps {
-  arrowPosition: string;
-}
+type ArrowsProps = {
+  arrowPosition: 'right' | 'left';
+};
 
 export const Wrapper = styled.section`
   position: absolute;
