@@ -36,7 +36,7 @@ import {
   Leaves,
 } from './styles';
 
-const Home: React.FC = () => {
+function Home() {
   const [parallaxScene, setParallaxScene] = useState<Parallax>();
   const [count, setCount] = useState(0);
 
@@ -58,7 +58,7 @@ const Home: React.FC = () => {
 
   return (
     <>
-      <Header />
+      <Header account="John Doe" />
 
       <Wrapper>
         <TextWithOpacity>Select the desired quantity</TextWithOpacity>
@@ -151,6 +151,6 @@ const Home: React.FC = () => {
       </Leaves>
     </>
   );
-};
+}
 
 export default Home;
